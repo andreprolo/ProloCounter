@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		703D8F1227DB77D20093EABB /* ProloCounter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 703D8F1127DB77D20093EABB /* ProloCounter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		703D8F1227DB77D20093EABB /* Prolo Counter.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 703D8F1127DB77D20093EABB /* Prolo Counter.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		703D8F1727DB77D40093EABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 703D8F1627DB77D40093EABB /* Assets.xcassets */; };
 		703D8F1D27DB77D40093EABB /* ProloCounter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 703D8F1C27DB77D40093EABB /* ProloCounter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		703D8F2227DB77D40093EABB /* ProloCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D8F2127DB77D40093EABB /* ProloCounterApp.swift */; };
@@ -17,6 +17,9 @@
 		703D8F2A27DB77D40093EABB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D8F2927DB77D40093EABB /* ComplicationController.swift */; };
 		703D8F2C27DB77D50093EABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 703D8F2B27DB77D50093EABB /* Assets.xcassets */; };
 		703D8F2F27DB77D50093EABB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 703D8F2E27DB77D50093EABB /* Preview Assets.xcassets */; };
+		703D8F4227E001980093EABB /* JsonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D8F4127E001980093EABB /* JsonUtil.swift */; };
+		703D8F4427E131C00093EABB /* ComplicationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D8F4327E131C00093EABB /* ComplicationViews.swift */; };
+		703D8F4627E14BB90093EABB /* ComplicationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D8F4527E14BB80093EABB /* ComplicationProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +57,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				703D8F1227DB77D20093EABB /* ProloCounter WatchKit App.app in Embed Watch Content */,
+				703D8F1227DB77D20093EABB /* Prolo Counter.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,8 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		703D8F0D27DB77D20093EABB /* ProloCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProloCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		703D8F1127DB77D20093EABB /* ProloCounter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProloCounter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		703D8F0D27DB77D20093EABB /* Prolo Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prolo Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		703D8F1127DB77D20093EABB /* Prolo Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prolo Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		703D8F1627DB77D40093EABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		703D8F1C27DB77D40093EABB /* ProloCounter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ProloCounter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		703D8F2127DB77D40093EABB /* ProloCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProloCounterApp.swift; sourceTree = "<group>"; };
@@ -75,6 +78,9 @@
 		703D8F2E27DB77D50093EABB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		703D8F3027DB77D50093EABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		703D8F3127DB77D50093EABB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		703D8F4127E001980093EABB /* JsonUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtil.swift; sourceTree = "<group>"; };
+		703D8F4327E131C00093EABB /* ComplicationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationViews.swift; sourceTree = "<group>"; };
+		703D8F4527E14BB80093EABB /* ComplicationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +106,8 @@
 		703D8F0E27DB77D20093EABB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				703D8F0D27DB77D20093EABB /* ProloCounter.app */,
-				703D8F1127DB77D20093EABB /* ProloCounter WatchKit App.app */,
+				703D8F0D27DB77D20093EABB /* Prolo Counter.app */,
+				703D8F1127DB77D20093EABB /* Prolo Counter.app */,
 				703D8F1C27DB77D40093EABB /* ProloCounter WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -127,6 +133,9 @@
 				703D8F3027DB77D50093EABB /* Info.plist */,
 				703D8F3127DB77D50093EABB /* PushNotificationPayload.apns */,
 				703D8F2D27DB77D50093EABB /* Preview Content */,
+				703D8F4127E001980093EABB /* JsonUtil.swift */,
+				703D8F4327E131C00093EABB /* ComplicationViews.swift */,
+				703D8F4527E14BB80093EABB /* ComplicationProvider.swift */,
 			);
 			path = "ProloCounter WatchKit Extension";
 			sourceTree = "<group>";
@@ -156,7 +165,7 @@
 			);
 			name = ProloCounter;
 			productName = ProloCounter;
-			productReference = 703D8F0D27DB77D20093EABB /* ProloCounter.app */;
+			productReference = 703D8F0D27DB77D20093EABB /* Prolo Counter.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		703D8F1027DB77D20093EABB /* ProloCounter WatchKit App */ = {
@@ -173,7 +182,7 @@
 			);
 			name = "ProloCounter WatchKit App";
 			productName = "ProloCounter WatchKit App";
-			productReference = 703D8F1127DB77D20093EABB /* ProloCounter WatchKit App.app */;
+			productReference = 703D8F1127DB77D20093EABB /* Prolo Counter.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		703D8F1B27DB77D40093EABB /* ProloCounter WatchKit Extension */ = {
@@ -267,7 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				703D8F2627DB77D40093EABB /* NotificationController.swift in Sources */,
+				703D8F4227E001980093EABB /* JsonUtil.swift in Sources */,
+				703D8F4627E14BB90093EABB /* ComplicationProvider.swift in Sources */,
 				703D8F2427DB77D40093EABB /* ContentView.swift in Sources */,
+				703D8F4427E131C00093EABB /* ComplicationViews.swift in Sources */,
 				703D8F2A27DB77D40093EABB /* ComplicationController.swift in Sources */,
 				703D8F2227DB77D40093EABB /* ProloCounterApp.swift in Sources */,
 				703D8F2827DB77D40093EABB /* NotificationView.swift in Sources */,
@@ -415,8 +427,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProloCounter WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "ProloCounter WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = "Prolo Counter";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ProloCounter_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -447,8 +459,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProloCounter WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "ProloCounter WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = "Prolo Counter";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ProloCounter_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,11 +491,10 @@
 				DEVELOPMENT_TEAM = MF7N7UYLVV;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = ProloCounter_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "ProloCounter WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andreprolo.ProloCounter.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Prolo Counter";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -504,11 +515,10 @@
 				DEVELOPMENT_TEAM = MF7N7UYLVV;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = ProloCounter_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "ProloCounter WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andreprolo.ProloCounter.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Prolo Counter";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -521,12 +531,14 @@
 		703D8F3D27DB77D50093EABB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MF7N7UYLVV;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andreprolo.ProloCounter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Prolo Counter";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -534,12 +546,14 @@
 		703D8F3E27DB77D50093EABB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MF7N7UYLVV;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andreprolo.ProloCounter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Prolo Counter";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

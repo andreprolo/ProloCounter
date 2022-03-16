@@ -8,13 +8,15 @@
 import ClockKit
 
 
-class ComplicationController: NSObject, CLKComplicationDataSource {
+final class ComplicationController: NSObject, CLKComplicationDataSource {
+    
+    private lazy var proloCounterProvider = ProloCounterComplicationProvider()
     
     // MARK: - Complication Configuration
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "ProloCounter", supportedFamilies: CLKComplicationFamily.allCases)
+            CLKComplicationDescriptor(identifier: "complication", displayName: "ProloCounter", supportedFamilies: [CLKComplicationFamily.graphicCircular])
             // Multiple complication support can be added here with more descriptors
         ]
         
@@ -42,7 +44,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
-        handler(nil)
+        switch complication.family {
+        case .graphicCircular:
+            handler(CLKComplicationTimelineEntry(date: Date(), complicationTemplate: proloCounterProvider.getComplication()))
+        default:
+            handler(nil)
+        }
     }
     
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
@@ -54,6 +61,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        switch complication.family {
+        case .graphicCircular:
+            handler(proloCounterProvider.getComplication())
+        default:
+            handler(nil)
+        }
     }
 }
